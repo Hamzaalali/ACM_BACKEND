@@ -1,5 +1,6 @@
 package com.example.acm_backend.auth.exceptions;
 
+import jakarta.validation.ConstraintViolation;
 import lombok.Data;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +8,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import javax.validation.ConstraintViolation;
 
 
 @ControllerAdvice

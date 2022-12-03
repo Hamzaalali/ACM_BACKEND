@@ -6,14 +6,13 @@ import com.example.acm_backend.staff.requests.AddMemberToCategoryRequest;
 import com.example.acm_backend.staff.requests.CreateStaffCategoryRequest;
 import com.example.acm_backend.staff.requests.GetSubCategoriesRequest;
 import com.example.acm_backend.staff.service.StaffCategoryService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
 import java.util.Collections;
 import java.util.List;
 

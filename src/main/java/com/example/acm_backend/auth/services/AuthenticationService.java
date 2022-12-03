@@ -50,7 +50,7 @@ public class AuthenticationService {
         if (!argon2.verify(user.getHash(), password.toCharArray())) {
             throw new InvalidPasswordException();
         }
-        String accessToken = generateJwtToken(user, (long) (1000 * 60 * 1), "access_token_secret");
+        String accessToken = generateJwtToken(user, (long) (1000 * 60 * 10), "access_token_secret");
         String refreshToken = generateJwtToken(user, (long) (60 * 60 * 1000 * 24 * 14), "refresh_token_secret");
         UserTokens userTokens = userTokensRepo.findUserTokensByUser(user);
         userTokens.setAccessToken(accessToken);

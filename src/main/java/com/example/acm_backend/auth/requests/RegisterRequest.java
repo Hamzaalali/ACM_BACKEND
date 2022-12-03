@@ -2,12 +2,11 @@ package com.example.acm_backend.auth.requests;
 
 import com.example.acm_backend.auth.entities.Role;
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 import java.util.List;
-
 @Data
 public class RegisterRequest {
     @NotEmpty(message = "Username can't be empty")

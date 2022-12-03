@@ -1,7 +1,7 @@
 package com.example.acm_backend.podcast.requests;
 import com.example.acm_backend.auth.entities.User;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
-import javax.validation.constraints.NotEmpty;
 
 @Data
 public class CreatePodcastRequest {
